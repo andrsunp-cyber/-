@@ -20,7 +20,7 @@ const STOCK_BIOREV = 'https://images.unsplash.com/photo-1580618672591-eb180b1a97
 const STOCK_FULLFACE = 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80';
 const STOCK_PEEL = 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80';
 const STOCK_CLEAN = 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=900&q=80';
-const STOCK_HANDS = 'https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?auto=format&fit=crop&w=900&q=80';
+const STOCK_HANDS = 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=80';
 
 const faceServices = [
   { name: 'Мезотерапия', price: 'от 6 000 ₽', desc: 'Питание кожи витаминным коктейлем, восстановление тонуса.', before: STOCK_MESO, after: STOCK_MESO },
