@@ -14,21 +14,21 @@ const PHONE = '+79280000000';
 const PHONE_DISPLAY = '+7 (928) 000-00-00';
 const ADDRESS = 'Кисловодская ул., 14А, Ессентуки Пассаж, этаж 1, кабинет 2';
 
-const STOCK_FACE = 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80';
-const STOCK_INJECTION = 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80';
-const STOCK_PEEL = 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=900&q=80';
-const STOCK_LASER = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=80';
-const STOCK_MASSAGE = 'https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=80';
-const STOCK_CARE = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80';
-const STOCK_HANDS = 'https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=900&q=80';
+const STOCK_MESO = 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80';
+const STOCK_INJECTION = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=80';
+const STOCK_BIOREV = 'https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=900&q=80';
+const STOCK_FULLFACE = 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80';
+const STOCK_PEEL = 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80';
+const STOCK_CLEAN = 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=900&q=80';
+const STOCK_HANDS = 'https://images.unsplash.com/photo-1588401667987-e03c2e8c0f0a?auto=format&fit=crop&w=900&q=80';
 
 const faceServices = [
-  { name: 'Мезотерапия', price: 'от 6 000 ₽', desc: 'Питание кожи витаминным коктейлем, восстановление тонуса.', before: STOCK_FACE, after: STOCK_FACE },
+  { name: 'Мезотерапия', price: 'от 6 000 ₽', desc: 'Питание кожи витаминным коктейлем, восстановление тонуса.', before: STOCK_MESO, after: STOCK_MESO },
   { name: 'Инъекции красоты', price: 'от 5 000 ₽', desc: 'Коррекция мимических и статических морщин.', before: STOCK_INJECTION, after: STOCK_INJECTION },
-  { name: 'Биоревитализация', price: 'от 12 000 ₽', desc: 'Глубокое увлажнение, стимуляция выработки коллагена.', before: STOCK_CARE, after: STOCK_CARE },
-  { name: 'FULL-FACE уход', price: 'от 18 000 ₽', desc: 'Комплексный уход: зоны вокруг глаз, лоб, щёки, шея.', before: STOCK_MASSAGE, after: STOCK_MASSAGE },
+  { name: 'Биоревитализация', price: 'от 12 000 ₽', desc: 'Глубокое увлажнение, стимуляция выработки коллагена.', before: STOCK_BIOREV, after: STOCK_BIOREV },
+  { name: 'FULL-FACE уход', price: 'от 18 000 ₽', desc: 'Комплексный уход: зоны вокруг глаз, лоб, щёки, шея.', before: STOCK_FULLFACE, after: STOCK_FULLFACE },
   { name: 'Химический пилинг', price: 'от 4 000 ₽', desc: 'Обновление кожи, ровный тон и сияние.', before: STOCK_PEEL, after: STOCK_PEEL },
-  { name: 'Аппаратная чистка', price: 'от 4 500 ₽', desc: 'Профессиональное очищение и лифтинг контуров.', before: STOCK_LASER, after: STOCK_LASER }
+  { name: 'Аппаратная чистка', price: 'от 4 500 ₽', desc: 'Профессиональное очищение и лифтинг контуров.', before: STOCK_CLEAN, after: STOCK_CLEAN }
 ];
 
 const handServices = [

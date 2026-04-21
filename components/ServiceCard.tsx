@@ -31,7 +31,7 @@ export default function ServiceCard({ name, price, desc, before, after, index }:
           alt={`${name} — после`}
           fill
           sizes="(max-width: 640px) 100vw, 33vw"
-          className="object-contain"
+          className="object-cover"
         />
         {/* До — появляется при наведении */}
         <Image
@@ -39,7 +39,7 @@ export default function ServiceCard({ name, price, desc, before, after, index }:
           alt={`${name} — до`}
           fill
           sizes="(max-width: 640px) 100vw, 33vw"
-          className="object-contain opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+          className="object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
         />
         {/* Метка статуса */}
         <span className="absolute top-3 left-3 text-[9px] tracking-[0.2em] uppercase px-2 py-0.5 rounded-sm font-serif bg-accent/90 text-white transition-opacity duration-300 group-hover:opacity-0">
