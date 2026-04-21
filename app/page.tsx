@@ -8,22 +8,31 @@ import SiteHeader from '@/components/SiteHeader';
 import Reveal from '@/components/Reveal';
 import ServiceCard from '@/components/ServiceCard';
 import Reviews from '@/components/Reviews';
+import Team from '@/components/Team';
 
 const PHONE = '+79280000000';
 const PHONE_DISPLAY = '+7 (928) 000-00-00';
 const ADDRESS = 'Кисловодская ул., 14А, Ессентуки Пассаж, этаж 1, кабинет 2';
 
+const STOCK_FACE = 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=900&q=80';
+const STOCK_INJECTION = 'https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=80';
+const STOCK_PEEL = 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=900&q=80';
+const STOCK_LASER = 'https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&w=900&q=80';
+const STOCK_MASSAGE = 'https://images.unsplash.com/photo-1552693673-1bf958298935?auto=format&fit=crop&w=900&q=80';
+const STOCK_CARE = 'https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=80';
+const STOCK_HANDS = 'https://images.unsplash.com/photo-1519415943484-9fa1873496d4?auto=format&fit=crop&w=900&q=80';
+
 const faceServices = [
-  { name: 'Мезотерапия', price: '8 000 ₽', desc: 'Питание кожи витаминным коктейлем.', before: '/images/gallery/pair6-before.jpg', after: '/images/gallery/pair6-after.jpg' },
-  { name: 'Коррекция морщин', price: '5 000 ₽', desc: 'Разглаживание мимических и статических морщин.', before: '/images/gallery/pair1-before.jpg', after: '/images/gallery/pair1-after.jpg' },
-  { name: 'Коллаген', price: '25 000 ₽', desc: 'Стимуляция выработки собственного коллагена.', before: '/images/gallery/pair3-before.jpg', after: '/images/gallery/pair3-after.jpg' },
-  { name: 'FULL-FACE', price: '22 000 ₽', desc: 'Комплексный уход: зоны вокруг глаз, лоб, щёки, шея.', before: '/images/gallery/pair5-before.jpg', after: '/images/gallery/pair5-after.jpg' },
-  { name: 'Пилинг', price: '4 000 ₽', desc: 'Обновление кожи, ровный тон, сияние.', before: '/images/gallery/pair4-before.jpg', after: '/images/gallery/pair4-after.jpg' },
-  { name: 'Процедура «Чёткий овал»', price: '14 000 ₽', desc: 'Коррекция контуров лица, подтяжка овала.', before: '/images/gallery/pair2-before.jpg', after: '/images/gallery/pair2-after.jpg' }
+  { name: 'Мезотерапия', price: 'от 6 000 ₽', desc: 'Питание кожи витаминным коктейлем, восстановление тонуса.', before: STOCK_FACE, after: STOCK_FACE },
+  { name: 'Инъекции красоты', price: 'от 5 000 ₽', desc: 'Коррекция мимических и статических морщин.', before: STOCK_INJECTION, after: STOCK_INJECTION },
+  { name: 'Биоревитализация', price: 'от 12 000 ₽', desc: 'Глубокое увлажнение, стимуляция выработки коллагена.', before: STOCK_CARE, after: STOCK_CARE },
+  { name: 'FULL-FACE уход', price: 'от 18 000 ₽', desc: 'Комплексный уход: зоны вокруг глаз, лоб, щёки, шея.', before: STOCK_MASSAGE, after: STOCK_MASSAGE },
+  { name: 'Химический пилинг', price: 'от 4 000 ₽', desc: 'Обновление кожи, ровный тон и сияние.', before: STOCK_PEEL, after: STOCK_PEEL },
+  { name: 'Аппаратная чистка', price: 'от 4 500 ₽', desc: 'Профессиональное очищение и лифтинг контуров.', before: STOCK_LASER, after: STOCK_LASER }
 ];
 
 const handServices = [
-  { name: 'Мезотерапия рук', price: '5 000 ₽', desc: 'Увлажнение, тонус, лёгкое омоложение кистей.', before: '/images/gallery/hands-after.jpg', after: '/images/gallery/hands-after.jpg' }
+  { name: 'Мезотерапия рук', price: 'от 5 000 ₽', desc: 'Увлажнение, тонус, лёгкое омоложение кистей.', before: STOCK_HANDS, after: STOCK_HANDS }
 ];
 
 export default function Home() {
@@ -65,8 +74,8 @@ export default function Home() {
             >
               <div className="absolute -inset-3 border border-ink/20 dark:border-dark-border rounded-sm -z-10" />
               <Image
-                src="/images/marina-portrait.webp"
-                alt="Марина Карева"
+                src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80"
+                alt="Частная косметологическая клиника"
                 fill
                 sizes="(max-width: 768px) 90vw, 40vw"
                 className="object-cover rounded-sm"
@@ -84,42 +93,43 @@ export default function Home() {
             >
               {[
                 <p key="k" className="text-[11px] tracking-[0.45em] uppercase text-muted dark:text-dark-muted mb-4">
-                  Эстетическая косметология
+                  Частная косметологическая клиника
                 </p>,
                 <h1 key="h" className="font-serif text-4xl md:text-5xl lg:text-6xl mb-5 leading-[1.02] text-ink dark:text-dark-text">
-                  <span className="block">Марина</span>
-                  <span className="block">Карева</span>
+                  <span className="block">Эстетика</span>
+                  <span className="block italic text-accent">и уход</span>
                 </h1>,
                 <p key="l" className="text-base text-muted dark:text-dark-muted leading-relaxed mb-6 max-w-lg">
-                  Косметолог в Ессентуках. Индивидуальный подход, бережные методики
-                  и видимый результат с первого визита.
+                  Команда сертифицированных врачей, современное оборудование
+                  и индивидуальный подход к каждому клиенту.
                 </p>,
                 <div key="d" className="space-y-4 text-muted dark:text-dark-muted leading-relaxed text-[15px]">
                   <p>
-                    Меня зовут Марина Карева. Более 10 лет я помогаю женщинам ухаживать
-                    за кожей, возвращать упругость и естественную красоту.
+                    Наша клиника — это пространство, где современные технологии
+                    косметологии сочетаются с заботой о здоровье вашей кожи.
                   </p>
                   <p>
-                    В работе сочетаю инъекционные и аппаратные методики, ручные техники
-                    и индивидуально подобранную домашнюю программу.
+                    Мы работаем только с проверенными препаратами и аппаратами,
+                    прошедшими сертификацию. Каждая процедура подбирается
+                    индивидуально после консультации.
                   </p>
                   <p>
-                    Мой принцип — бережный результат без «пластикового» эффекта.
-                    Вы должны оставаться собой, только отдохнувшей и уверенной.
+                    Наш принцип — естественный результат без «пластикового»
+                    эффекта. Вы остаётесь собой — отдохнувшей и уверенной.
                   </p>
                 </div>,
                 <div key="s" className="mt-7 grid grid-cols-3 gap-4 max-w-md">
                   <div className="border-l-2 border-ink dark:border-dark-text pl-3">
                     <p className="font-serif text-2xl md:text-3xl">10+</p>
-                    <p className="text-[10px] tracking-[0.15em] uppercase text-muted dark:text-dark-muted mt-1">лет опыта</p>
+                    <p className="text-[10px] tracking-[0.15em] uppercase text-muted dark:text-dark-muted mt-1">врачей</p>
                   </div>
                   <div className="border-l-2 border-ink dark:border-dark-text pl-3">
-                    <p className="font-serif text-2xl md:text-3xl">1000+</p>
+                    <p className="font-serif text-2xl md:text-3xl">5000+</p>
                     <p className="text-[10px] tracking-[0.15em] uppercase text-muted dark:text-dark-muted mt-1">клиентов</p>
                   </div>
                   <div className="border-l-2 border-ink dark:border-dark-text pl-3">
-                    <p className="font-serif text-2xl md:text-3xl">20+</p>
-                    <p className="text-[10px] tracking-[0.15em] uppercase text-muted dark:text-dark-muted mt-1">методик</p>
+                    <p className="font-serif text-2xl md:text-3xl">30+</p>
+                    <p className="text-[10px] tracking-[0.15em] uppercase text-muted dark:text-dark-muted mt-1">процедур</p>
                   </div>
                 </div>,
                 <div key="b" className="mt-7 flex flex-wrap gap-3">
@@ -225,6 +235,8 @@ export default function Home() {
         </div>
       </section>
 
+      <Team />
+
       <Reviews />
 
       {/* Contacts */}
@@ -277,7 +289,7 @@ export default function Home() {
                 </div>
                 <div className="flex gap-2">
                   <span className="text-muted dark:text-dark-muted w-20 shrink-0 text-[10px] tracking-[0.2em] uppercase pt-1">Instagram</span>
-                  <span>@marina.kareva.beauty</span>
+                  <span>@your.clinic</span>
                 </div>
               </div>
             </motion.div>
@@ -322,7 +334,7 @@ export default function Home() {
 
       <footer className="py-12 bg-ink dark:bg-black text-white/70">
         <div className="mx-auto max-w-6xl px-5 flex flex-col md:flex-row gap-4 justify-between items-center text-xs tracking-wider">
-          <p>© {new Date().getFullYear()} Марина Карева · Косметолог</p>
+          <p>© {new Date().getFullYear()} Частная клиника · Эстетическая косметология</p>
           <p>Ессентуки · {PHONE_DISPLAY}</p>
         </div>
       </footer>

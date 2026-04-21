@@ -41,11 +41,12 @@ export default function SiteHeader() {
           style={{ paddingTop: padY, paddingBottom: padY, gap }}
           className="mx-auto max-w-6xl px-5 flex flex-col items-center relative"
         >
-          <a href="#home" className="font-serif text-2xl tracking-[0.2em] text-ink dark:text-dark-text">
-            M · КАРЕВА
+          <a href="#home" className="font-serif text-xl md:text-2xl tracking-[0.2em] text-ink dark:text-dark-text text-center">
+            ЧАСТНАЯ · КЛИНИКА
           </a>
-          <nav className="hidden md:flex gap-10 text-[13px] tracking-[0.2em] uppercase text-muted dark:text-dark-muted">
+          <nav className="hidden md:flex gap-8 text-[13px] tracking-[0.2em] uppercase text-muted dark:text-dark-muted">
             <a href="#services" className="hover:text-accent transition">Услуги</a>
+            <a href="#team" className="hover:text-accent transition">Команда</a>
             <a href="#reviews" className="hover:text-accent transition">Отзывы</a>
             <a href="#contacts" className="hover:text-accent transition">Контакты</a>
           </nav>
